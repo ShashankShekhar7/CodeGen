@@ -15,7 +15,7 @@ const app = express();
 
 // --- CORS CONFIG: Allow Vercel frontend only ---
 app.use(cors({
-  origin: "https://your-frontend.vercel.app", // <-- use your real frontend URL here
+origin: "https://code-gen-jade.vercel.app",
   credentials: true // if you use cookies/sessions; otherwise can omit
 }));
 
