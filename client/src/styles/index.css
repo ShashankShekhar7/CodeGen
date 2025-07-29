@@ -1,0 +1,75 @@
+/* src/styles/index.css */
+
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, button {
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  margin: 0 0 1rem 0;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
