@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://codegen-osxc.onrender.com", // change base URL if different
+  baseURL: "https://codegen-osxc.onrender.com/api", // change base URL if different
 });
 
 api.interceptors.request.use((config) => {
