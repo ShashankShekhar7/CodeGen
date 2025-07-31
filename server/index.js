@@ -13,13 +13,8 @@ dotenv.config();
 // Initialize express app
 const app = express();
 
-// --- CORS CONFIG: Allow Vercel frontend only ---
-app.use(cors({
-origin: "https://code-gen-jade.vercel.app",
-  credentials: true // if you use cookies/sessions; otherwise can omit
-}));
-
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // Test Route
@@ -30,7 +25,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/v1/gemini", geminiRoutes);
-app.use("/api/session", sessionRoutes);
+app.use('/api/session', sessionRoutes);
 
 // Database connection and server start
 const PORT = process.env.PORT || 8000;
